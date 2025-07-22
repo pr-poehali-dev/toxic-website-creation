@@ -81,7 +81,7 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/07e78d20-c338-4da4-bbbc-f0fa28769856.jpg" 
                   alt="Art Portrait 3"
-                  className="w-full h-60 filter contrast-125 object-fill"
+                  className="w-full h-60 filter contrast-125 rounded-[0.25rem] object-cover px-0 mx-0 py-[1px] my-0"
                 />
               </Card>
             </div>

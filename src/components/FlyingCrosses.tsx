@@ -93,17 +93,16 @@ const FlyingCrosses: React.FC = () => {
             position: relative;
             width: 100%;
             height: 100%;
-            transform: rotate(45deg);
           ">
             <div style="
               position: absolute;
-              top: 50%;
+              top: 30%;
               left: 0;
               width: 100%;
               height: 2px;
               background: white;
               transform: translateY(-50%);
-              box-shadow: 0 0 ${cross.size / 2}px rgba(255, 255, 255, 0.3);
+              box-shadow: 0 0 ${cross.size / 2}px rgba(255, 255, 255, 0.4);
             "></div>
             <div style="
               position: absolute;
@@ -113,7 +112,7 @@ const FlyingCrosses: React.FC = () => {
               height: 100%;
               background: white;
               transform: translateX(-50%);
-              box-shadow: 0 0 ${cross.size / 2}px rgba(255, 255, 255, 0.3);
+              box-shadow: 0 0 ${cross.size / 2}px rgba(255, 255, 255, 0.4);
             "></div>
           </div>
         `;

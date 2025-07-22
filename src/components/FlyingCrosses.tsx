@@ -20,7 +20,7 @@ const FlyingCrosses: React.FC = () => {
     // Создаем кресты
     const createCrosses = () => {
       crossesRef.current = [];
-      for (let i = 0; i < 12; i++) {
+      for (let i = 0; i < 20; i++) {
         crossesRef.current.push({
           id: i,
           x: Math.random() * window.innerWidth,
@@ -89,20 +89,20 @@ const FlyingCrosses: React.FC = () => {
         `;
 
         crossElement.innerHTML = `
-          <svg width="100%" height="100%" viewBox="0 0 100 100" style="filter: drop-shadow(0 0 ${cross.size / 3}px rgba(255, 255, 255, 0.6));">
+          <svg width="100%" height="100%" viewBox="0 0 100 120" style="filter: drop-shadow(0 0 ${cross.size / 3}px rgba(255, 255, 255, 0.6));">
             <path d="
               M45 5 
               L40 0 L50 0 L60 0 L55 5
-              L55 40
-              L90 40
-              L95 35 L95 45 L95 55 L90 50
-              L55 50
-              L55 95
-              L60 100 L50 100 L40 100 L45 95
-              L45 50
-              L10 50
-              L5 55 L5 45 L5 35 L10 40
-              L45 40
+              L55 35
+              L85 35
+              L90 30 L90 40 L90 50 L85 45
+              L55 45
+              L55 115
+              L60 120 L50 120 L40 120 L45 115
+              L45 45
+              L15 45
+              L10 50 L10 40 L10 30 L15 35
+              L45 35
               Z
             " 
             fill="white"/>

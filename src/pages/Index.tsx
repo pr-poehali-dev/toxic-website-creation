@@ -7,16 +7,8 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="font-display font-bold text-2xl text-primary">EXF4TT</div>
-          <div className="flex gap-6">
-            <Button variant="ghost" className="text-foreground hover:text-primary">
-              Обо мне
-            </Button>
-            <Button variant="ghost" className="text-foreground hover:text-primary">
-              Контакты
-            </Button>
-          </div>
+        <div className="container mx-auto px-6 py-4 flex justify-center items-center">
+          <div className="font-display font-bold text-2xl text-primary">exf4tt</div>
         </div>
       </nav>
 

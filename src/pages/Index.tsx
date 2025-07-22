@@ -62,26 +62,26 @@ const Index = () => {
           </div>
 
           <div className="animate-slide-in-right">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-2 max-w-md mx-auto">
               <Card className="p-0 overflow-hidden bg-card/50 border-border hover:scale-105 transition-transform duration-300">
                 <img 
                   src="https://cdn.poehali.dev/files/be08ea87-0f60-41d0-9d2c-654eea5d4953.jpg" 
                   alt="Art Portrait 1"
-                  className="w-full h-64 object-cover filter contrast-125"
+                  className="w-full h-48 object-cover object-top filter contrast-125"
                 />
               </Card>
-              <Card className="p-0 overflow-hidden bg-card/50 border-border hover:scale-105 transition-transform duration-300 mt-8">
+              <Card className="p-0 overflow-hidden bg-card/50 border-border hover:scale-105 transition-transform duration-300">
                 <img 
                   src="https://cdn.poehali.dev/files/6c7c09ba-cc7e-48f9-a2f5-a5a6e9bdd831.jpg" 
                   alt="Art Portrait 2"
-                  className="w-full h-64 object-cover filter contrast-125"
+                  className="w-full h-48 object-cover object-center filter contrast-125"
                 />
               </Card>
               <Card className="p-0 overflow-hidden bg-card/50 border-border hover:scale-105 transition-transform duration-300 col-span-2">
                 <img 
                   src="https://cdn.poehali.dev/files/07e78d20-c338-4da4-bbbc-f0fa28769856.jpg" 
                   alt="Art Portrait 3"
-                  className="w-full h-48 object-cover filter contrast-125"
+                  className="w-full h-32 object-cover object-center filter contrast-125"
                 />
               </Card>
             </div>

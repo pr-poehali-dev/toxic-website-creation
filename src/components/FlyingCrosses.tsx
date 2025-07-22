@@ -89,32 +89,24 @@ const FlyingCrosses: React.FC = () => {
         `;
 
         crossElement.innerHTML = `
-          <div style="
-            position: relative;
-            width: 100%;
-            height: 100%;
-          ">
-            <div style="
-              position: absolute;
-              top: 30%;
-              left: 0;
-              width: 100%;
-              height: 2px;
-              background: white;
-              transform: translateY(-50%);
-              box-shadow: 0 0 ${cross.size / 2}px rgba(255, 255, 255, 0.4);
-            "></div>
-            <div style="
-              position: absolute;
-              left: 50%;
-              top: 0;
-              width: 2px;
-              height: 100%;
-              background: white;
-              transform: translateX(-50%);
-              box-shadow: 0 0 ${cross.size / 2}px rgba(255, 255, 255, 0.4);
-            "></div>
-          </div>
+          <svg width="100%" height="100%" viewBox="0 0 100 100" style="filter: drop-shadow(0 0 ${cross.size / 3}px rgba(255, 255, 255, 0.6));">
+            <path d="
+              M45 5 
+              L40 0 L50 0 L60 0 L55 5
+              L55 40
+              L90 40
+              L95 35 L95 45 L95 55 L90 50
+              L55 50
+              L55 95
+              L60 100 L50 100 L40 100 L45 95
+              L45 50
+              L10 50
+              L5 55 L5 45 L5 35 L10 40
+              L45 40
+              Z
+            " 
+            fill="white"/>
+          </svg>
         `;
 
         container.appendChild(crossElement);

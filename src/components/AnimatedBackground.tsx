@@ -99,10 +99,7 @@ const AnimatedBackground: React.FC = () => {
         style={{ zIndex: 1 }}
       />
 
-      {/* Сетка с анимацией */}
-      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: 2 }}>
-        <div className="absolute inset-0 bg-grid-pattern opacity-10 animate-pulse"></div>
-      </div>
+
     </>
   );
 };

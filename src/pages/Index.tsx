@@ -1,10 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import AnimatedBackground from '@/components/AnimatedBackground';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground relative">
+      <AnimatedBackground />
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-6 py-4 flex justify-center items-center">
@@ -15,7 +17,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-20 min-h-screen flex items-center">
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in">
+          <div className="animate-fadeInUp relative z-10">
             <div className="mb-6">
               <span className="inline-block px-3 py-1 bg-primary/20 text-primary font-medium text-sm rounded-full mb-4">
                 🇷🇺 РФ
@@ -44,7 +46,7 @@ const Index = () => {
             </div>
 
             <div className="flex gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/80 text-white font-semibold">
+              <Button size="lg" className="bg-primary hover:bg-primary/80 text-white font-semibold animate-pulse-glow">
                 Связаться
               </Button>
               <Button size="lg" variant="outline" className="border-border hover:bg-accent">
@@ -53,9 +55,9 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="animate-slide-in-right">
+          <div className="animate-fadeInUp animation-delay-2000 relative z-10">
             <div className="grid grid-cols-2 gap-3 max-w-2xl mx-auto">
-              <Card className="p-0 overflow-hidden bg-card/50 border-border hover:scale-105 transition-transform duration-300">
+              <Card className="p-0 overflow-hidden bg-card/50 border-border hover:scale-105 transition-transform duration-300 hover:shadow-2xl">
                 <img 
                   src="https://cdn.poehali.dev/files/be08ea87-0f60-41d0-9d2c-654eea5d4953.jpg" 
                   alt="Art Portrait 1"
